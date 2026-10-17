@@ -8,7 +8,7 @@ $parts = api\getPath();
 $users = api\getData();
 $detail = null;
 
-if ($parts[1] === 'users') {
+if (isset($parts[1]) && $parts[1] === 'users') {
 	$detail = !empty($parts[2]) ? api\getData($parts[2]) : "";
 }
 

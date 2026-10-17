@@ -3,7 +3,7 @@
    "version": "0.0.1",
    "scripts": {
       "watch": "./node_modules/.bin/webpack --watch",
-      "start": "php5 -S localhost:8080"
+      "start": "php -S 127.0.0.1:8000 -t . server.php"
    },
    "devDependencies": {
       "babel-core": "^6.4.5",

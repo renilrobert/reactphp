@@ -225,7 +225,7 @@ function getData($username = '')
 
 $parts = getPath();
 
-if ($parts[1] === 'api') {
+if (isset($parts[1]) && $parts[1] === 'api') {
 
    if (count($parts) === 3) {
       $data = getData();

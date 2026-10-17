@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run PHP app",
+			"type": "shell",
+			"command": "${env:LOCALAPPDATA}\\Programs\\PHP\\php.exe",
+			"args": [
+				"-S",
+				"127.0.0.1:8000",
+				"-t",
+				".",
+				"server.php"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
